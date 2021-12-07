@@ -1,6 +1,15 @@
-body {
-    padding: 8%;
+/*CSS*/
+
+header {
+    padding: 7%;
 }
+
+* {
+    background-color: #F0F8FF;
+}
+
+
+/*HEADER*/
 
 .card-img-header {
     width: 80%;
@@ -10,8 +19,11 @@ body {
     border-radius: 50%;
 }
 
+body div header div {
+    flex-direction: row;
+}
+
 .card {
-    /* margin-top: 7%; */
     width: 100%;
     height: 50%;
     flex: auto;
@@ -23,32 +35,291 @@ body {
     ;
 }
 
-body div header div {
-    flex-direction: row;
-}
-
-.links {
-    font-size: 32px;
-    margin: 15px;
-    margin-left: 0px;
-}
-
 .about-text {
     font-size: 20px;
-    color: blueviolet;
+    color: #4070f4;
     word-spacing: 10px;
 }
-.work h2{
-    text-align: center;
-    color: teal;
-    font-size: 45px;
+
+.contact-card {
+    align-items: center;
+    padding: 5%;
 }
-.work{
+
+
+/*LINKS*/
+
+.links {
+    font-size: 30px;
+    margin: 15px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+    color: #4070f4;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: rgb(17, 41, 255) !important;
+}
+
+a:active {
+    text-decoration: none!important;
+    color: black !important;
+}
+
+
+/*Education & Experience*/
+
+.work .title {
+    color: #4070f4;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.work {
     margin: 10%;
     margin-top: 5%;
 }
 
-.contact-card{
+
+/* Skills and Interests */
+
+.skills {
+    background: #F0F8FF;
+}
+
+.skills .content {
+    padding: 40px 0;
+}
+
+.skills .content .title {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: #4070f4;
+}
+
+.skills .skills-details {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.skills-details .boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-details .box {
+    border: 3px solid #4070f4;
+    width: calc(100% / 4 - 20px);
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.skills-details .boxes .topic {
+    font-size: 20px;
+    color: #4070f4;
+}
+
+.skills-details .boxes .per {
+    font-size: 60px;
+    color: #4070f4;
+}
+
+.interests .title {
+    text-align: center;
+    font-size: 30px;
+    color: #4070f4;
+    font-weight: bold;
+}
+
+.interests .boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interests .boxes .box {
+    border: 2px solid #4070f4;
+}
+
+.interests .box {
+    width: calc(100% / 4 - 20px);
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+
+/*Achievements*/
+
+.achievements h2 {
+    color: #4070f4;
+    text-align: center;
     padding: 5%;
+}
+
+.achievements h3 {
+    color: #4070f4;
+}
+
+
+/*Projects*/
+
+.projects .title h3 {
+    text-align: center;
+    color: #4070f4;
+}
+
+.projects .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+}
+
+.projects .boxes .box:hover {
+    background: #4070f4;
+    color: #F0F8FF;
+}
+
+.projects .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    background: #F0F8FF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #4070f4;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+    background-color: #4070f4;
+    color: #4070f4;
+}
+
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p {
+    color: #0E2431;
+    transition: all 0.4s ease;
+}
+
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p {
+    color: black;
+}
+
+
+/* Contact Me CSS */
+
+.contact {
+    background: #F0F8FF;
+}
+
+.contact .title {
+    color: #4070f4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact .text {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.contact button {
+    border: none;
+    background-color: #4070f4;
+}
+
+.contact .fab {
+    font-size: 30px;
+    margin: 28px;
+}
+
+.contact .icons {
+    margin: 30px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1000px) {
+    .skills-details .boxes .box {
+        margin: 20px 10px;
+        width: calc(100% / 2 - 20px);
+    }
+    .interests .boxes .box {
+        margin: 20px 10px;
+        width: calc(100% / 2 - 20px);
+    }
+    .interests .boxes {
+        width: 100%;
+    }
+    .contact .icons {
+        height: 80px;
+        width: 90px;
+    }
+    .contact .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 750px) {
+    .skills .skills-details {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-details .boxes {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .projects .boxes .box {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .contact .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-details .boxes .per {
+        font-size: 30px;
+        color: #4070f4;
+    }
 }
