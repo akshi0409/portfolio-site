@@ -269,9 +269,6 @@ a:active {
     margin: 28px;
 }
 
-.contact .icons {
-    margin: 30px;
-}
 
 
 /*MEDIA QUERIES*/
@@ -287,10 +284,6 @@ a:active {
     }
     .interests .boxes {
         width: 100%;
-    }
-    .contact .icons {
-        height: 80px;
-        width: 90px;
     }
     .contact .text {
         font-size: 18px;
