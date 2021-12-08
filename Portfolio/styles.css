@@ -315,4 +315,8 @@ a:active {
         font-size: 30px;
         color: #4070f4;
     }
+    .contact .fab {
+        font-size: 28px;
+        margin: 20px;
+    }
 }
